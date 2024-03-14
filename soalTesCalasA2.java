@@ -1,7 +1,7 @@
-//time wasted on this code: 23:55
+//time wasted on this code: 2h 39m
 //Author: Muhammad Fiqri
 //Github: https://github.com/Muhammad-Fiqri
-//Description:
+//Description: this code is made to render a table of array data in the CLI where the text location, width, height, and column are declared before hand
 
 public class soalTesCalasA2 {
     //this method return the length of a string inside an array
