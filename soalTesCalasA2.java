@@ -44,6 +44,18 @@ public class soalTesCalasA2 {
                     if (soalTesCalasA2.contains(tableColumn,col)) {
                         System.out.print("|");
                     } else {
+                        
+                        for (int h = 0 ; h <= 3; h++) {
+                            for (int i = 0; i <= 4; i++) {
+                                if (col == textColLoc[i] && row == tableRow[h]) {
+                                    System.out.print(Nilai[h][i]);
+                                } else if (col >= textColLoc[i] + soalTesCalasA2.getStringLengthInArray(Nilai[h], i) && col <= textColLoc[i+1]-1 && row == tableRow[h]) {
+                                    System.out.print(" ");
+                                }
+                            }
+                        }
+
+                        /*
                         //print header
                         for (int i = 0; i <= 4; i++) {
                             if (col == textColLoc[i] && row == tableRow[0]) {
@@ -52,6 +64,15 @@ public class soalTesCalasA2 {
                                 System.out.print(" ");
                             }
                         }
+                        //print body 
+                        for (int i = 0; i <= 4; i++) {
+                            if (col == textColLoc[i] && row == tableRow[1]) {
+                                System.out.print(Nilai[1][i]);
+                            } else if (col >= textColLoc[i] + soalTesCalasA2.getStringLengthInArray(Nilai[1], i) && col <= textColLoc[i+1]-1 && row == tableRow[1]) {
+                                System.out.print(" ");
+                            }
+                        }
+                        */
                     }
 
                 } else {
