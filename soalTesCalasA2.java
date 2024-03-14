@@ -39,7 +39,7 @@ public class soalTesCalasA2 {
         //define the location of every column
         int[] tableColumn = {1,9,18,27,36,61};
         //define the location of the text column index to be written on each row
-        int[] textColLoc = {3,10,19,28,37,62};
+        int[] textColLoc = {2,10,19,28,37,62};
         //define the row that can be written with text
         int[] tableRow = {2,4,5,6}; 
 
