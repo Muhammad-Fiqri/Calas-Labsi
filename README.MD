@@ -10,5 +10,5 @@
 '''javac -d compiled/ soalTesCalasA2.java soalTesCalasA1.java'''
 <p>3. Run this command<p>
 '''cd compiled/'''
-'''java soalTestCalasA1.java'''
-'''java soalTestCalasA2.java'''
+'''java soalTesCalasA1'''
+'''java soalTesCalasA2'''
