@@ -39,7 +39,7 @@ public class soalTesCalasA2 {
         //define the location of every column
         int[] tableColumn = {1,9,18,27,36,61};
         //define the location of the text column index to be written on each row
-        int[] textColLoc = {2,10,19,28,37,62};
+        int[] textColLoc = {3,12,21,29,44,62};
         //define the row that can be written with text
         int[] tableRow = {2,4,5,6}; 
 
@@ -54,15 +54,17 @@ public class soalTesCalasA2 {
                         System.out.print("|");
                     } else {
                         
-                        //print the text in the writeable row
-                        for (int h = 0 ; h <= 3; h++) {
-                            for (int i = 0; i <= 4; i++) {
+                        //print the text in the writeable cell
+                        for (int cellRow = 0 ; cellRow <= 3; cellRow++) {
+                            for (int cellCol = 0; cellCol <= 4; cellCol++) {
 
                                 //print only if col index is in text location and in the writeable row and if it's outside the text range, print space
-                                if (col == textColLoc[i] && row == tableRow[h]) {
-                                    System.out.print(Nilai[h][i]);
-                                } else if (col >= textColLoc[i] + soalTesCalasA2.getStringLengthInArray(Nilai[h], i) && col <= textColLoc[i+1]-1 && row == tableRow[h]) {
-                                    System.out.print(" ");
+                                if (col == textColLoc[cellCol] && row == tableRow[cellRow]) {
+                                    System.out.print(Nilai[cellRow][cellCol]);
+                                } else if (col > tableColumn[cellCol] && col < tableColumn[cellCol+1] && row == tableRow[cellRow]) {
+                                    if (col < textColLoc[cellCol] || col >= textColLoc[cellCol] + soalTesCalasA2.getStringLengthInArray(Nilai[cellRow], cellCol)) {
+                                        System.out.print(" ");
+                                    }
                                 }
                             }
                         }
