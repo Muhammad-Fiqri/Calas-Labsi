@@ -1,6 +1,6 @@
-//time wasted on this code: 2h 39m
+//time spend on this code: 3h 39m
 //Author: Muhammad Fiqri
-//Github: https://github.com/Muhammad-Fiqri
+//Github: https://github.com/Muhammad-Fiqri/Calas-Labsi
 //Description: this code is made to render a table of array data in the CLI where the text location, width, height, and column are declared before hand
 
 public class soalTesCalasA2 {
@@ -58,12 +58,16 @@ public class soalTesCalasA2 {
                         for (int cellRow = 0 ; cellRow <= 3; cellRow++) {
                             for (int cellCol = 0; cellCol <= 4; cellCol++) {
 
-                                //print only if col index is in text location and in the writeable row and if it's outside the text range, print space
-                                if (col == textColLoc[cellCol] && row == tableRow[cellRow]) {
-                                    System.out.print(Nilai[cellRow][cellCol]);
-                                } else if (col > tableColumn[cellCol] && col < tableColumn[cellCol+1] && row == tableRow[cellRow]) {
-                                    if (col < textColLoc[cellCol] || col >= textColLoc[cellCol] + soalTesCalasA2.getStringLengthInArray(Nilai[cellRow], cellCol)) {
-                                        System.out.print(" ");
+                                //check if in writeable row
+                                if (row == tableRow[cellRow]) {
+                                    //print data if col index is in text location and in the writeable row
+                                    if (col == textColLoc[cellCol] && row == tableRow[cellRow]) {
+                                        System.out.print(Nilai[cellRow][cellCol]);
+                                    } else if (col > tableColumn[cellCol] && col < tableColumn[cellCol+1] && row == tableRow[cellRow]) {
+                                        //print space if col index is not in text location and not in cell border of left and right
+                                        if (col < textColLoc[cellCol] || col >= textColLoc[cellCol] + soalTesCalasA2.getStringLengthInArray(Nilai[cellRow], cellCol)) {
+                                            System.out.print(" ");
+                                        }
                                     }
                                 }
                             }

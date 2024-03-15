@@ -1,6 +1,6 @@
-//time wasted on this code: 1h 4m
+//time spend on this code: 1h 4m
 //Author: Muhammad Fiqri
-//Github: https://github.com/Muhammad-Fiqri
+//Github: https://github.com/Muhammad-Fiqri/Calas-Labsi
 //Description: this code will output a symmetric leg triangle with length determined by the variable triangleLength
 
 public class soalTesCalasA1 {
