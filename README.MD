@@ -11,12 +11,6 @@
 javac -d compiled/ soalTesCalasA2.java soalTesCalasA1.java
 </code>
 <p>3. Run this command<p>
-<code>
-cd compiled/
-</code>
-<code>
-java soalTesCalasA1
-</code>
-<code>
-java soalTesCalasA2
-</code>
+<code>cd compiled/</code>
+<code>java soalTesCalasA1</code>
+<code>java soalTesCalasA2</code>
